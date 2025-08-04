@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 2 Assignment - Enhanced HTML5 Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    video {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My HTML5 Page</h1>
+
+  <section>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading research articles</li>
+      <li>Coding small web projects</li>
+      <li>Listening to music</li>
+      <li>Watching documentaries</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Daily Routine Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>6:00 AM</td>
+          <td>Morning Routine & Exercise</td>
+        </tr>
+        <tr>
+          <td>8:00 AM</td>
+          <td>Classes & Assignments</td>
+        </tr>
+        <tr>
+          <td>1:00 PM</td>
+          <td>Lunch Break</td>
+        </tr>
+        <tr>
+          <td>2:00 PM</td>
+          <td>Coding Practice / Labs</td>
+        </tr>
+        <tr>
+          <td>8:00 PM</td>
+          <td>Relax / Wind Down</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" autocomplete="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" autocomplete="email" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4" placeholder="Choose a username" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Enter a strong password" />
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself"></textarea>
+
+        <label for="readonly-field">Referral Code (readonly):</label>
+        <input type="text" id="readonly-field" value="PLP2025" readonly />
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Motivational Video</h2>
+    <video controls>
+      <source src="https://player.vimeo.com/external/327832418.sd.mp4?s=9e38c3e9ce943a4f2107a0b4d89a0c2f6e47b2c4&profile_id=165" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Egrah Savai. All rights reserved.</p>
+  </footer>
+
+</body>
+    </html>
